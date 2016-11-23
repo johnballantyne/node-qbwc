@@ -13,10 +13,10 @@
     "QuickBooks Web Connector"
   ],
   "dependencies": {
-    "soap": "0.9.1",
     "chalk": "1.1.1",
-    "xmlbuilder": "2.6.4",
-    "node-uuid": "1.4.3"
+    "soap": "0.9.1",
+    "uuid": "^3.0.0",
+    "xmlbuilder": "2.6.4"
   },
   "devDependencies": {
     "jshint": "2.1.x",
@@ -48,38 +48,42 @@
   },
   "jscsConfig": {
     "requireCurlyBraces": [
-        "if",
-        "else",
-        "for",
-        "while",
-        "do",
-        "try",
-        "catch"
+      "if",
+      "else",
+      "for",
+      "while",
+      "do",
+      "try",
+      "catch"
     ],
     "requireSpaceAfterKeywords": [
-        "if",
-        "else",
-        "for",
-        "while",
-        "do",
-        "switch",
-        "case",
-        "return",
-        "try",
-        "catch",
-        "typeof"
+      "if",
+      "else",
+      "for",
+      "while",
+      "do",
+      "switch",
+      "case",
+      "return",
+      "try",
+      "catch",
+      "typeof"
     ],
     "requireSpaceBeforeBlockStatements": true,
     "requireParenthesesAroundIIFE": true,
     "requireSpacesInConditionalExpression": true,
     "disallowSpacesInNamedFunctionExpression": {
-        "beforeOpeningRoundBrace": true
+      "beforeOpeningRoundBrace": true
     },
     "disallowSpacesInFunctionDeclaration": {
-        "beforeOpeningRoundBrace": true
+      "beforeOpeningRoundBrace": true
     },
     "requireSpaceBetweenArguments": true,
-    "requireMultipleVarDecl": { "allExcept": ["require"] },
+    "requireMultipleVarDecl": {
+      "allExcept": [
+        "require"
+      ]
+    },
     "requireVarDeclFirst": true,
     "requireBlocksOnNewline": true,
     "disallowEmptyBlocks": true,
@@ -90,25 +94,25 @@
     "disallowSpaceAfterPrefixUnaryOperators": true,
     "disallowSpaceBeforePostfixUnaryOperators": true,
     "disallowSpaceBeforeBinaryOperators": [
-        ","
+      ","
     ],
     "requireSpacesInForStatement": true,
     "requireSpacesInAnonymousFunctionExpression": {
-        "beforeOpeningRoundBrace": true,
-        "beforeOpeningCurlyBrace": true
+      "beforeOpeningRoundBrace": true,
+      "beforeOpeningCurlyBrace": true
     },
     "requireSpaceBeforeBinaryOperators": true,
     "requireSpaceAfterBinaryOperators": true,
     "disallowKeywords": [
-        "with",
-        "continue"
+      "with",
+      "continue"
     ],
     "validateIndentation": 4,
     "disallowMixedSpacesAndTabs": true,
     "disallowTrailingWhitespace": true,
     "disallowTrailingComma": true,
     "disallowKeywordsOnNewLine": [
-        "else"
+      "else"
     ],
     "requireLineFeedAtFileEnd": true,
     "requireCapitalizedConstructors": true,
@@ -123,7 +127,7 @@
     "requireCapitalizedComments": false,
     "requireSpaceAfterLineComment": true,
     "requireSpacesInFunction": {
-        "beforeOpeningCurlyBrace": true
+      "beforeOpeningCurlyBrace": true
     },
     "validateLineBreaks": "LF",
     "validateQuoteMarks": "'"
